@@ -11,7 +11,7 @@ connectDB();
 // Importing express and dotenv to manage environment variables
 const app = express();
 app.use(express.json()); // Middleware to parse JSON requests
-app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded requests
+app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded requests like form data
 
 app.use("/api/users", userRoutes);
 
